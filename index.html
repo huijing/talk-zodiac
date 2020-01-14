@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>十二生肖</title>
+  <meta name="description" content="试探WebSpeech API的中文功能。">
+  <meta name="author" content="Chen Hui Jing">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <p class="warning">您的浏览器暂时不支持Speech Recognition API。请使用Chrome试试看吧。</p>
+  <main>
+    <div data-animal="鼠">鼠</div>
+    <div data-animal="牛">牛</div>
+    <div data-animal="虎">虎</div>
+    <div data-animal="兔">兔</div>
+    <article>
+      <h1>十二生肖</h1>
+      <p>请问您属什么生肖？请只用单字。</p>
+      <button type="button" id="activateMic" class="btn-speak">说</button>
+      <pre><code id="consoleLog">点击按钮后开始说话…</code></pre>
+      <form id="hearResponse" class="response">
+        <select id="pickVoice"></select>
+        <button id="playResponse" class="btn-response">试听结果</button>
+      </form>
+    </article>
+    <div data-animal="龙">龙</div>
+    <div data-animal="蛇">蛇</div>
+    <div data-animal="马">马</div>
+    <div data-animal="羊">羊</div>
+    <div data-animal="猴">猴</div>
+    <div data-animal="鸡">鸡</div>
+    <div data-animal="狗">狗</div>
+    <div data-animal="猪">猪</div>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
